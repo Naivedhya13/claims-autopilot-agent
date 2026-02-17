@@ -1,0 +1,22 @@
+SUPERBILL (SYNTHETIC DEMO)
+Patient: SYNTHETIC PATIENT
+DOB: 1990-01-02
+Insurance: ExamplePayer PPO
+Member ID: X123456789
+
+Provider: Example Clinic
+Rendering Provider NPI: 1234567890
+Billing Provider NPI: 1234567890
+Location: Los Angeles, CA
+Date of Service: 2026-02-10
+Place of Service: 11 (Office)
+
+Diagnoses (ICD-10):
+- M54.5 Low back pain
+
+Procedures (CPT/HCPCS):
+- 99213 Office/outpatient visit, established patient
+Units: 1
+
+Notes summary:
+- Back pain x 6 weeks. Tried OTC NSAIDs. Requested PT referral.

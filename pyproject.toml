@@ -1,0 +1,5 @@
+[project]
+name = "claims-autopilot-agent"
+version = "0.1.0"
+description = "Beginner-friendly AI agent for synthetic healthcare claims automation."
+requires-python = ">=3.10"

@@ -1,0 +1,10 @@
+REMITTANCE ADVICE (SYNTHETIC DEMO)
+Claim: ABC-00001
+Line 1: CPT 99213
+
+Adjustment:
+CARC 16 - Claim/service lacks information or has submission/billing error(s) which is needed for adjudication.
+RARC N265 - Missing/incomplete/invalid ordering provider name.
+RARC N286 - Missing/incomplete/invalid referring provider identifier.
+
+Next step: Submit corrected claim with the missing provider details.

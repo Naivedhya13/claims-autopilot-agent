@@ -1,0 +1,7 @@
+code_type,code,meaning
+CARC,16,Missing/incomplete/invalid information needed to process the claim.
+CARC,96,Non-covered charge(s).
+CARC,197,Precertification/authorization/notification absent.
+RARC,N265,Missing/incomplete/invalid ordering provider name.
+RARC,N286,Missing/incomplete/invalid referring provider identifier.
+RARC,M51,Missing/incomplete/invalid procedure code(s).

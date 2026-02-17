@@ -1,0 +1,32 @@
+required_fields:
+  - patient.dob
+  - patient.member_id
+  - providers.billing_npi
+  - providers.rendering_npi
+  - claim.date_of_service
+  - claim.place_of_service
+  - claim.lines
+
+basic_checks:
+  - name: "At least one diagnosis"
+    type: "min_list_len"
+    path: "claim.diagnoses"
+    min: 1
+    message: "No diagnoses found. Add at least one ICD-10 code."
+  - name: "At least one service line"
+    type: "min_list_len"
+    path: "claim.lines"
+    min: 1
+    message: "No procedure lines found. Add at least one CPT/HCPCS line."
+
+conditional_checks:
+  - name: "Ordering provider name required for imaging"
+    type: "requires_field_for_codes"
+    codes: ["71046"]
+    field: "providers.ordering_provider_name"
+    message: "Ordering provider name is required for these codes: {codes}"
+  - name: "Referring provider ID required for imaging"
+    type: "requires_field_for_codes"
+    codes: ["71046"]
+    field: "providers.referring_provider_id"
+    message: "Referring provider identifier/NPI is required for these codes: {codes}"
